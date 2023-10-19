@@ -2,6 +2,16 @@ function tocaSomPom (idElementoAudio) {
      document.querySelector(idElementoAudio).play();
    }
 
+    if (elemento && elemento.localName === 'audio'){
+        elemento.play();
+  }
+else {
+  //alert('Elemento não encontrado');
+  console.log('Elemento não encontrado ou seletor invalido');
+
+}
+
+    
 const ListaDeTlecas = document.querySelectorAll('.tecla');
 
 let contador = 0; 
